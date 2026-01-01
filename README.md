@@ -9,6 +9,7 @@ In the production environment, the platform includes a much broader and more sop
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=reactrouter&logoColor=white)
 ![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)
 
 ## Features
 
@@ -17,15 +18,6 @@ In the production environment, the platform includes a much broader and more sop
 - __Cart management__ — add, remove, and update items before checkout
 - __Order submission__ — sends order data to the backend service
 - __API‑driven data loading__ — menu and order operations powered by the Spring Boot backend
-
-## Tech Stack
-
-- React
-- TypeScript
-- React Router
-- Axios
-- Vite
-- CSS
 
 ## Prerequisites
 
