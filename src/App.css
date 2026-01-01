@@ -1,0 +1,518 @@
+/*
+ * ------------------------------------------------------------
+ * Copyright (c) 2026 Software Bakery Inc.
+ * All rights reserved.
+ *
+ * Company : Software Bakery Inc.
+ * Author  : Sung Hyun Back
+ * ------------------------------------------------------------
+ */
+ 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  max-width: 1280px;
+  border-left: 1px solid #FAFAFA;
+  border-right: 1px solid #FAFAFA;
+  background: #FAFAFA;
+}
+
+#container {
+  width: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Header & Top Navigation */
+.topNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+img#storeLogo {
+  width: 100px;
+  height: 100px;
+  margin: 10px 30px;
+}
+
+div#navigationMenu {
+  margin: 10px 30px;
+}
+
+.headerIcon {
+  background: none;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.headerIcon img {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+
+/* Page & Content */
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FAFAFA;
+}
+
+.content {
+  width: 85%;
+  padding: 30px 0;
+}
+
+.fullWidthContent {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.centeredContent {
+  width: 85%;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.pageTitle {
+  width: 100%;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.subTitle {
+  font-size: 1.5em;
+  color: black;
+  line-height: 1.15;
+}
+
+.message {
+  font-size: 1.25em;
+  color: black;
+  font-weight: 200;
+  line-height: 1.15;
+}
+
+/* Components & Widgets */
+table {
+  width: 100%;
+  border: 1px solid #EEEEEE;
+  border-collapse: separate;
+  border-radius: 5px;
+  border-spacing: 0;
+  overflow: hidden;
+  text-align: center;
+  font-size: 18px;
+}
+
+.tableHead {
+  background-color: #EEEEEE;
+  color: black;
+  border: none;
+}
+
+td,
+th,
+tr {
+  border: none;
+}
+
+#orderedTable {
+  background: #EEEEEE;
+}
+
+#cartTable thead tr th,
+#cartTable tbody tr td,
+#orderedTable thead tr th,
+#orderedTable tbody tr td {
+  padding: 17px 10px;
+}
+
+#priceTable tr td {
+  padding: 15px 25px;
+}
+
+#priceTable .key {
+  text-align: start;
+  font-weight: 700;
+}
+
+#priceTable .value {
+  text-align: end;
+}
+
+.table .numberColumn {
+  width: 15%;
+}
+
+.table .nameColumn {
+  width: 70%;
+}
+
+.table .priceColumn {
+  width: 15%;
+}
+
+.roundedButton {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 15px 50px;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.roundedButtonSmall {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.roundedContainer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px 0px;
+}
+
+.removeTableData {
+  width: 20px;
+  height: 20px;
+  padding: 0px 25px !important;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.listWidget {
+  width: 100%;
+  min-height: 50px;
+  border: none;
+}
+
+.menuItemListWidget {
+  width: 100%;
+  height: 355px;
+  min-height: 50px;
+  border: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-top: 15px;
+}
+
+.listContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#menuCategoryRow {
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+h3#categoryName {
+  font-size: 23px;
+  color: black;
+}
+
+.menuItemContainer {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.menuItemCard {
+  margin: 0px 5px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.listContainer>.menuItemContainer:first-child>.menuItemCard {
+  margin-left: 0px;
+}
+
+.listContainer>.menuItemContainer:last-child>.menuItemCard {
+  margin-right: 0px;
+}
+
+.menuItemImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menuItemIntro {
+  padding: 5px 10px 25px 10px;
+}
+
+.menuItemName {
+  font-size: 1.05em;
+  color: black;
+}
+
+.menuItemPrice {
+  font-size: 1.05em;
+}
+
+.menuItemTagContainer {
+  height: 30px;
+}
+
+.tagIcon {
+  width: 25px;
+  height: 25px;
+  margin: 0px 3px;
+}
+
+.menuItemTagContainer>.tagIcon:first-child {
+  margin-left: 0px;
+}
+
+.menuItemTagContainer>.tagIcon:last-child {
+  margin-right: 0px;
+}
+
+.menuItemActionContainer {
+  text-align: right;
+}
+
+.menuItemActionContainer>.menuIconButton:first-child {
+  margin-left: 0px;
+}
+
+.menuItemActionContainer>.menuIconButton:last-child {
+  margin-right: 0px;
+}
+
+.menuIconButton {
+  background: #EEE;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0px 3px;
+}
+
+.menuIconButton img {
+  width: 25px;
+  height: 25px;
+}
+
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.dialogContent {
+  position: relative;
+  background: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 400px;
+  overflow-y: auto;
+}
+
+.dialogContent > .closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(256, 256, 256, 0.75);
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.dialogContent > .menuItemImage {
+  height: 275px;
+}
+
+.dialogContent > .menuItemIntro {
+  padding: 10px 20px 20px 20px;
+}
+
+.dialogContent>.menuItemIntro>.menuItemName {
+  font-size: 22px;
+}
+
+.dialogContent>.menuItemIntro>.menuItemDescription {
+  font-size: 16px;
+  line-height: 1.25;
+  color: black;
+}
+
+.dialogContent>.menuItemIntro>.menuItemPrice {
+  font-size: 16px;
+}
+
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toastAlert {
+  background: black !important;
+  color: white !important;
+}
+
+/* Small phones */
+@media (min-width: 480px) {
+
+  .content,
+  .centeredContent {
+    width: 80%;
+  }
+}
+
+/* Large phones */
+@media (min-width: 640px) {
+  .subTitle {
+    font-size: 1.6em;
+  }
+
+  .message {
+    font-size: 1.35em;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+
+  .content,
+  .centeredContent {
+    width: 70%;
+  }
+
+  .subTitle {
+    font-size: 1.7em;
+  }
+  
+  .message {
+    font-size: 1.45em;
+  }
+}
+
+/* Small laptops */
+@media (min-width: 1024px) {
+
+  .content,
+  .centeredContent {
+    width: 60%;
+  }
+
+  .subTitle {
+    font-size: 1.85em;
+  }
+  
+  .message {
+    font-size: 1.5em;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1280px) {}
+
+/* Large desktops */
+@media (min-width: 1536px) {}

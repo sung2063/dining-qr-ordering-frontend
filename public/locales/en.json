@@ -1,0 +1,24 @@
+{
+    "_meta": {
+        "copyright": "© 2026 Software Bakery Inc.",
+        "author": "Sung Hyun Back"
+    },
+    "menu": {
+        "addToCart": "Add To Cart",
+        "itemAddedMessage": "Item has been added to cart."
+    },
+    "cart": {
+        "header": "Cart & Order Summary",
+        "subtotal": "Subtotal",
+        "tax": "Tax",
+        "total": "Total",
+        "button": "Place An Order",
+        "emptyCart": "There is no item to order.",
+        "itemRemovedMessage": "Item has been removed from cart."
+    },
+    "confirmation": {
+        "title": "Your order has been placed.",
+        "message": "Your order will be served once it is ready.",
+        "button": "Back To Menu"
+    }
+}
