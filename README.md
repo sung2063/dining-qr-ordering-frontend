@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# Dining QR Ordering App (MVP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simplified MVP version of my full dining QR ordering platform. The React application focuses on the core customer experience of browsing a digital menu, selecting items, managing a cart, and placing an order, all integrated with a Spring Boot backend service. The goal of this MVP is to provide a lightweight, easy‑to‑run demonstration of the essential ordering flow.
 
-Currently, two official plugins are available:
+In the production environment, the platform includes a much broader and more sophisticated feature set. The full system supports QR code scanning by table, staff and role management, category and menu item administration, revenue analytics and reporting, and a variety of operational tools. It also offers user‑customizable settings such as light and dark themes and multi‑language support. These advanced capabilities are intentionally excluded from the MVP to keep the portfolio version simple and focused.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- __Menu browsing UI__ — responsive interface for viewing available dishes
+- __Item detail view__ — users can inspect descriptions and prices
+- __Cart management__ — add, remove, and update items before checkout
+- __Order submission__ — sends order data to the backend service
+- __API‑driven data loading__ — menu and order operations powered by the Spring Boot backend
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- React Router
+- Axios
+- Vite
+- CSS
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Node.js
+- npm or yarn
+- Dining QR Ordering Backend Service — required for API communication (clone from: https://github.com/sung2063/dining-qr-service-backend)
