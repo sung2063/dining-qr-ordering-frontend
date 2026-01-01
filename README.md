@@ -1,4 +1,4 @@
-# Dining QR Ordering App (MVP)
+# Dining-QR Ordering App (MVP)
 
 This project is a simplified MVP version of my full dining QR ordering platform. The React application focuses on the core customer experience of browsing a digital menu, selecting items, managing a cart, and placing an order, all integrated with a Spring Boot backend service. The goal of this MVP is to provide a lightweight, easy‑to‑run demonstration of the essential ordering flow.
 
@@ -26,3 +26,7 @@ In the production environment, the platform includes a much broader and more sop
 - Node.js
 - npm or yarn
 - Dining QR Ordering Backend Service — required for API communication (clone from: https://github.com/sung2063/dining-qr-service-backend)
+
+## License
+
+This project is for portfolio and demonstration purposes.
