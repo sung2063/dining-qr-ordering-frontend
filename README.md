@@ -4,6 +4,12 @@ This project is a simplified MVP version of my full dining QR ordering platform.
 
 In the production environment, the platform includes a much broader and more sophisticated feature set. The full system supports QR code scanning by table, staff and role management, category and menu item administration, revenue analytics and reporting, and a variety of operational tools. It also offers user‑customizable settings such as light and dark themes and multi‑language support. These advanced capabilities are intentionally excluded from the MVP to keep the portfolio version simple and focused.
 
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=reactrouter&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+
 ## Features
 
 - __Menu browsing UI__ — responsive interface for viewing available dishes
