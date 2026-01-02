@@ -27,6 +27,13 @@ In the production environment, the platform includes a much broader and more sop
 - npm or yarn
 - Dining QR Ordering Backend Service — required for API communication (clone from: https://github.com/sung2063/dining-qr-service-backend)
 
+## Screenshots
+
+| <p align="center"><img src="https://raw.githubusercontent.com/sung2063/dining-qr-ordering-frontend/main/resources/screenshot-1.png" width="100%" height="450px"><br><b>Menu Screen</b></p> | <p align="center"><img src="https://raw.githubusercontent.com/sung2063/dining-qr-ordering-frontend/main/resources/screenshot-2.png" width="100%" height="450px"><br><b>Item Detail Modal</b></p> |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <p align="center"><img src="https://raw.githubusercontent.com/sung2063/dining-qr-ordering-frontend/main/resources/screenshot-3.png" width="100%" height="450px"><br><b>Order Screen</b></p> | <p align="center"><img src="https://raw.githubusercontent.com/sung2063/dining-qr-ordering-frontend/main/resources/screenshot-4.png" width="100%" height="450px"><br><b>Checkout Screen</b></p> |
+
+
 ## License
 
 This project is for portfolio and demonstration purposes.
