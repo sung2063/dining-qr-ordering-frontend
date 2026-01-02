@@ -11,6 +11,8 @@ In the production environment, the platform includes a much broader and more sop
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)
 
+![Dining-QR Ordering Demo](https://github.com/sung2063/dining-qr-ordering-frontend/blob/main/resources/dining-qr-ordering-demo.gif)
+
 ## Features
 
 - __Menu browsing UI__ — responsive interface for viewing available dishes
