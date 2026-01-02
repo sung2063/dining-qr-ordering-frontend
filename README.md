@@ -24,8 +24,20 @@ In the production environment, the platform includes a much broader and more sop
 ## Prerequisites
 
 - Node.js
-- npm or yarn
-- Dining QR Ordering Backend Service — required for API communication (clone from: https://github.com/sung2063/dining-qr-service-backend)
+- npm
+- Dining-QR Backend Service — required for API communication (clone from: https://github.com/sung2063/dining-qr-service-backend)
+
+## Setup & Run
+
+1. <b>Clone the repository</b>
+2. <b>Ensure backend services are running</b><br>
+The React app depends on the Spring Boot API and PostgreSQL database.
+<br>Make sure both services are already running.
+<br>You can follow the backend setup instructions here: https://github.com/sung2063/dining-qr-service-backend?tab=readme-ov-file#setup--run
+3. <b>Start the app</b><br>
+Run the app locally: `npm run dev`.
+<br>This will generate a local development URL (usually `http://localhost:5173` or similar) in your terminal.
+<br>Open that link in your browser to interact with the application.
 
 ## Screenshots
 
